@@ -1,0 +1,27 @@
+.container{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    gap: 1rem;
+    align-items: center;
+    text-decoration: none;
+    border: 1px solid rgb(201, 201, 201);
+    background-color: white;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.container  h3, .container p{
+    color: black;
+    font-family: 'montserrat';
+}
+.container img{
+    width: 80%;
+}
+
+.container:hover{
+    transform:scale(1.05);
+    border: none;
+    box-shadow: 0px 10px 10px 4px rgba(201,201,201,0.84);
+}
