@@ -1,6 +1,6 @@
 import Details from "@components/Details/Details"
 
-const DetailsContainer = ({data}) => {
+const DetailsContainer = ({data}:any) => {
   return (
     <div>
       <Details data={data}/>
