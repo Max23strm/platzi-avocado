@@ -1,10 +1,10 @@
 import Card from '@components/Card/Card'
 import styles from './CardContainer.module.css'
 
-const CardContainer = ({data}) => {
+const CardContainer = ({data}:any) => {
   return (
     <div className={styles.container}>
-        {data.map(e=>{
+        {data.map((e:any)=>{
         return <Card key={e.name} data={e}/>
       })}
     </div>

@@ -2,7 +2,7 @@ import Link from "next/link"
 
 import styles from './Card.module.css'
 
-const Card = ({data}) => {
+const Card = ({data}:any) => {
   return (
     <Link href={`/product/${data.id}`} className={styles.container}>
         <h3>{data.name}</h3>
