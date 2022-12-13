@@ -1,6 +1,6 @@
 
 import styles from './Details.module.css'
-const Details = ({data}) => {
+const Details = ({data}:any) => {
 
 
   return (
