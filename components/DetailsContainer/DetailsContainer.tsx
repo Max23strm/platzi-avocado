@@ -1,8 +1,10 @@
-import React from 'react'
+import Details from "@components/Details/Details"
 
-const DetailsContainer = () => {
+const DetailsContainer = ({data}) => {
   return (
-    <div>DetailsContainer</div>
+    <div>
+      <Details data={data}/>
+    </div>
   )
 }
 

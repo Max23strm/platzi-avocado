@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
+import DetailsContainer from '@components/DetailsContainer/DetailsContainer'
+import Layout from '@components/Layout'
 
 const ProductPage = () => {
   const [avo, setAvo] = useState({})
@@ -14,11 +16,12 @@ const ProductPage = () => {
         .then((res) => res.json())
         .then((data) => setAvo(data))
       }},[])
-      console.log(avo)
   return (
-    <section>
-      {avo.name && <h1>Página producto: {avo.name}</h1>}
-    </section>
+    <Layout>
+      <section>
+        <DetailsContainer data={avo}/>
+      </section>
+    </Layout>
   )
 }
 

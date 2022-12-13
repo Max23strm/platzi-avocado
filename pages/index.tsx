@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import Link from 'next/link'
-import Navbar from '@components/Navbar/Navbar'
+import Layout from '@components/Layout'
 import CardContainer from '@components/CardContainer/CardContainer'
-import Card from '@components/Card/Card'
 
 const HomePage = () => {
   const [avoList, setAvoList] = useState<TProduct[]> ([])
@@ -12,8 +10,11 @@ const HomePage = () => {
   },[])
   return (
     <>
-      <Navbar />
-      <CardContainer data={avoList}/>
+    
+
+      <Layout>
+        <CardContainer data={avoList}/>
+      </Layout>
     </>
   )
 }
